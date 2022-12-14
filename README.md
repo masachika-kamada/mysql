@@ -35,6 +35,26 @@ Query OK, 1 row affected (0.00 sec)
 
 Query OK, 1 row affected (0.00 sec)
 
+mysql> show tables;
++-------------------------+
+| Tables_in_big_countries |
++-------------------------+
+| World                   |
++-------------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from World;
++-------------+-----------+---------+------------+--------------+
+| name        | continent | area    | population | gdp          |
++-------------+-----------+---------+------------+--------------+
+| Afghanistan | Asia      |  652230 |   25500100 |  20343000000 |
+| Albania     | Europe    |   28748 |    2831741 |  12960000000 |
+| Algeria     | Africa    | 2381741 |   37100000 | 188681000000 |
+| Andorra     | Europe    |     468 |      78115 |   3712000000 |
+| Angola      | Africa    | 1246700 |   20609294 | 100990000000 |
++-------------+-----------+---------+------------+--------------+
+5 rows in set (0.00 sec)
+
 mysql> source day1/big_countries/a.sql
 Database changed
 +-------------+------------+---------+
